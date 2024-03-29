@@ -12,10 +12,10 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.lutto.blockcollisions.Controller">
    <children>
-      <Line endX="-50.0" endY="186.0" layoutX="109.0" layoutY="123.0" startX="-50.0" startY="-123.0" stroke="WHITE" />
+      <Line fx:id="wall" endX="-50.0" endY="186.0" layoutX="109.0" layoutY="123.0" startX="-50.0" startY="-123.0" stroke="WHITE" />
       <Line endX="500.0" layoutX="110.0" layoutY="310.0" startX="-50.0" stroke="WHITE" />
       <Button layoutX="284.0" layoutY="340.0" mnemonicParsing="false" onAction="#gameStart" text="Start" />
-      <Text fill="WHITE" layoutX="417.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="# Collisions: ">
+      <Text fx:id="numberOfCollisionsText" fill="WHITE" layoutX="417.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="# Collisions: 0">
          <font>
             <Font name="Times New Roman" size="18.0" />
          </font>
